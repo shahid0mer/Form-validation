@@ -92,7 +92,10 @@ signUpForm.addEventListener('submit',(event) => {
         return;
     }
 
+    if(isValid)
+    {
+        signUpForm.reset()
+    }
 
 } )
 
-signUpForm.reset()
