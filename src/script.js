@@ -13,6 +13,7 @@ let errorGender = document.getElementById('error-gender')
 signUpForm.addEventListener('submit',(event) => {
     event.preventDefault()
   
+    let isValid = true
     
     let Name = signUpForm['username'].value
     
@@ -95,6 +96,7 @@ signUpForm.addEventListener('submit',(event) => {
     if(isValid)
     {
         signUpForm.reset()
+        alert("Sign Up Success")
     }
 
 } )
